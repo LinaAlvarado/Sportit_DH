@@ -95,25 +95,25 @@ h1 {
   padding: 1rem;
 }
 
-.main-container-text {
+.main-conteiner-text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 1rem;
 }
 
-.main-container-text h1,
-.main-container-text p {
+.main-conteiner-text h1,
+.main-conteiner-text p {
   text-align: right;
   margin-bottom: 28px;
 }
 
-.main-container-text p {
+.main-conteiner-text p {
   color: var(--NeutralColor-Dark);
 }
 
 /* segunda sección  */
-.section-container-color {
+.section-conteiner-color {
   background-color: var(--AccentColor);
   padding: 1rem;
   padding-top: 2rem;
@@ -123,13 +123,49 @@ h1 {
 color: var(--white);
 font-size: var(--fs-h2);
 margin-bottom: 20px;
+width: 300px;
 }
 
 .section-text-p{
   color: var(--white);
 }
 
+/* tercera sección  */
+.section-conteiner-items{
+margin-top: 2rem;
+}
 
+.conteiner-item-number{
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+background-color: rgba(139, 72, 191, 0.3);
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+margin-left: 20px;
+}
+
+.item-number{
+background-color: var(--PrimaryColor);
+color: var(--white);
+width: 60px;
+height: 43px;
+border-radius: 50px;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 5px;
+}
+
+h4{
+color: var(--NeutralColot-DarkBlue);
+}
+
+.conteiner-item > p{
+  padding-left: 20px;
+  color: var(--NeutralColor-Light);
+}
 /* de laptop hacia adelante */
 @media (min-width: 1024px) {
   /* Header */
@@ -146,14 +182,19 @@ margin-bottom: 20px;
   }
 
   /* primera sección - main */
-  .main-container {
+  .main-conteiner {
     display: flex;
     align-items: center;
     padding: 0 2rem;
   }
 
+  .imagen-padel {
+    width: 40%;
+    padding: 1rem;
+  }
+
   /* segunda sección  */
-  .section-container-color{
+  .section-conteiner-color{
     background-color: var(--PrimaryColor);
     display: flex;
     justify-content: space-around;
@@ -162,7 +203,7 @@ margin-bottom: 20px;
   }
   
   .section-text-h2{
-  width: 300px;
+  /* width: 300px; */
   margin: 0;
   }
 
