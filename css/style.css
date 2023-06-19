@@ -13,6 +13,7 @@
   --AccentColor: #3cddf3;
   --NeutralColor-Dark: #1e1e26;
   --NeutralColor-Light: #b9b9c1;
+  --NeutralColor-Light-gray: #FAFAFA;
   --NeutralColot-DarkBlue: #232851;
   --NeutralColot-dB-opacity: #232851a2;
   --white: #ffffff;
@@ -78,6 +79,7 @@ ul a:hover {
   border: none;
   border-radius: 50px;
   transition: background-color 0.5s;
+  font-size: 1.05rem;
 }
 
 .primary-action-button:hover {
@@ -135,6 +137,9 @@ width: 300px;
 margin-top: 2rem;
 }
 
+.conteiner-item{
+  margin-bottom: 40px;
+}
 .conteiner-item-number{
 display: flex;
 align-items: center;
@@ -158,13 +163,88 @@ justify-content: center;
 margin-right: 5px;
 }
 
-h4{
+h4,h5{
 color: var(--NeutralColot-DarkBlue);
 }
 
 .conteiner-item > p{
   padding-left: 20px;
   color: var(--NeutralColor-Light);
+}
+
+/* cuarta sección */
+.section-conteiner-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 44px 0;
+}
+
+.section-conteiner-cards h2{
+  color: var(--NeutralColot-DarkBlue);
+  font-size: var(--fs-h2);
+}
+
+.conteiner{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.conteiner-card{
+  background-color: var(--NeutralColor-Light-gray);
+  margin: 0 1rem;
+  padding: 1rem;
+  padding-top: 3rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-avatar{
+position: relative;
+top: 40px;
+}
+
+.conteiner-card p{
+  text-align: center;
+  color: var(--NeutralColor-Light);
+  line-height: 150%;
+}
+
+/* quinta sección */
+.section-conteiner-color-action{
+  background-color: var(--AccentColor);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.conteiner-color-action-h2{
+color: var(--white);
+font-size: var(--fs-h2);
+text-align: center;
+}
+
+.second-action-button {
+  background-color: var(--NeutralColot-DarkBlue);
+  color: var(--white);
+  height: 44px;
+  width: 134px;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.5s;
+  font-size: 1.05rem;
+}
+
+.second-action-button:hover {
+  background-color: var(--NeutralColor-Dark);
 }
 /* de laptop hacia adelante */
 @media (min-width: 1024px) {
