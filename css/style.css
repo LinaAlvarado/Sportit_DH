@@ -418,6 +418,11 @@ footer > p {
     display: flex;
   }
 
+  .section-conteiner-cards{
+    padding: 4rem 1rem;
+    gap: 30px;
+  }
+
   .container-avatar-cadrs {
     display: flex;
     justify-content: space-evenly;
